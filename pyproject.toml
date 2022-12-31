@@ -1,0 +1,31 @@
+[project]
+
+name = "pyri-webui-resources"
+version = "0.1.0"
+description = "PyRI Teach Pendant WebUI Resources"
+readme = "README.md"
+requires-python = ">=3.8"
+license = {file = "LICENSE.txt"}
+keywords = ["pyodide", "pyri-project", "pyri-runtime-package", "robotics"]
+authors = [
+    {name = "John Wason", email = "wason@wasontech.com"}
+]
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "License :: OSI Approved :: Apache Software License",
+    "Topic :: Scientific/Engineering"
+]
+
+dependencies = [
+    'importlib-resources',
+]
+
+[project.optional-dependencies]
+test = [
+    "pytest",
+    "pytest-asyncio"
+]
+
+[project.urls]
+homepage="http://pyri.tech"
+repository="https://github.com/pyri-project/pyri-webui-resources"
