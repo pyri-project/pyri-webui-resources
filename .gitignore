@@ -138,5 +138,5 @@ dmypy.json
 cython_debug/
 
 # Don't commit the resource files to git
-src/pyri/webui_resources/
-src/pyri/deps/
+src/pyri/webui_resources/pyodide/webui_static
+src/pyri/webui_resources/deps/webui_static

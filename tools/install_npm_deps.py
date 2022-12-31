@@ -7,7 +7,7 @@ NPM_PACKAGES = [
     {
         "name": "@fortawesome/fontawesome-free",
         "version": "5.15.3",
-        "files": ["@fortawesome/fontawesome-free/css/all.min.css"]
+        "files": ["@fortawesome/fontawesome-free/**/*"]
     },
     {
         "name": "blockly",
@@ -60,7 +60,7 @@ NPM_PACKAGES = [
 
 def main():
 
-    deps_dir = Path(__file__).parent.parent / "src"/ "pyri" / "webui_resources" / "deps"
+    deps_dir = Path(__file__).parent.parent / "src"/ "pyri" / "webui_resources" / "deps" / "webui_static"
     deps_dir.mkdir(parents=True, exist_ok=True)
 
     packages_json = Path(__file__).parent / "files" / "webui_deps_package.json"
