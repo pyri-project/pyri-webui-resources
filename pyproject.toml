@@ -1,7 +1,7 @@
 [project]
 
 name = "pyri-webui-resources"
-version = "0.2.0"
+version = "0.3.0"
 description = "PyRI Teach Pendant WebUI Resources"
 readme = "README.md"
 requires-python = ">=3.8"
@@ -17,7 +17,7 @@ classifiers = [
 ]
 
 dependencies = [
-    'importlib-resources',
+    'importlib-resources==5.13.0'
 ]
 
 [project.optional-dependencies]
@@ -29,3 +29,7 @@ test = [
 [project.urls]
 homepage="http://pyri.tech"
 repository="https://github.com/pyri-project/pyri-webui-resources"
+
+[tool.setuptools.package-data]
+'pyri.webui_resources.deps.webui_static' = ['*']
+'pyri.webui_resources.pyodide.webui_static' = ['*' ]

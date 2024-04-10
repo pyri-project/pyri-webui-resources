@@ -4,6 +4,8 @@ import io
 import tarfile
 from pathlib import Path
 
+raise Exception("Pyodide build is not currently up-to-date. Please use the pre-built pyri-webui-resources from pyri-project pip repository.")
+
 PYODIDE_VERSION = "0.21.3"
 PYODIDE_URL = f"https://github.com/pyodide/pyodide/releases/download/{PYODIDE_VERSION}/pyodide-build-{PYODIDE_VERSION}.tar.bz2"
 
